@@ -1,6 +1,7 @@
 # JAVA-Learning-Journey
 
-#🌳 Java & Java Full Stack — Structured Topics Tree
+🌳 Java & Java Full Stack — Structured Topics Tree
+
 1️⃣ Core Java
 Basics
 
