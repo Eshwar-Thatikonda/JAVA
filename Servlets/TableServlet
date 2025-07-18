@@ -1,0 +1,30 @@
+import java.io.*;
+import jakarta.servlet.*;
+import jakarta.servlet.http.*;
+
+public class TableServlet extends HttpServlet 
+{
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) 
+    throws ServletException, IOException 
+	{
+        		PrintWriter out = response.getWriter();
+        		int row=Integer.parseInt(request.getParameter("row"));
+			int col=Integer.parseInt(request.getParameter("column"));
+			out.println("<html> <head> <h1> Table </h1> </head>");
+			out.println("<body > <table border='1'>");
+			int c=1;
+        		for (int i = 0; i < row; i++) 
+			{
+            			out.println("<tr border='0' >");
+
+            			for (int j = 0; j < col; j++) 
+				{
+            		    		out.println("<td >" + (c)+"</td>");
+					c++;
+            			}
+            			out.println("</tr><br>");
+        		}
+
+        		out.println("</table> </body> </html>");
+    	}
+}
